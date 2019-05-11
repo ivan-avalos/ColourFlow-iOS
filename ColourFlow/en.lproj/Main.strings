@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Motoki Narita (MIT)"; ObjectID = "52s-MB-dYG"; */
+"52s-MB-dYG.text" = "Motoki Narita (MIT)";
+
+/* Class = "UINavigationItem"; title = "About"; ObjectID = "9Nx-VG-XFj"; */
+"9Nx-VG-XFj.title" = "About";
+
+/* Class = "UILabel"; text = "Iván Alejandro Ávalos Díaz"; ObjectID = "DqO-1P-YmH"; */
+"DqO-1P-YmH.text" = "Iván Alejandro Ávalos Díaz";
+
+/* Class = "UITableViewSection"; headerTitle = "Open source libraries"; ObjectID = "Vgm-5P-jZ0"; */
+"Vgm-5P-jZ0.headerTitle" = "Open source libraries";
+
+/* Class = "UILabel"; text = "GNU GPLv3"; ObjectID = "Znm-57-olH"; */
+"Znm-57-olH.text" = "GNU GPLv3";
+
+/* Class = "UITableViewSection"; headerTitle = "Source code"; ObjectID = "aOn-eG-Pzo"; */
+"aOn-eG-Pzo.headerTitle" = "Source code";
+
+/* Class = "UILabel"; text = "Licence"; ObjectID = "gPW-1f-Fhc"; */
+"gPW-1f-Fhc.text" = "Licence";
+
+/* Class = "UITableViewSection"; headerTitle = "Developer"; ObjectID = "mqG-Kx-nAk"; */
+"mqG-Kx-nAk.headerTitle" = "Developer";
+
+/* Class = "UILabel"; text = "Website"; ObjectID = "qln-VR-DOh"; */
+"qln-VR-DOh.text" = "Website";
+
+/* Class = "UILabel"; text = "RippleAnimation"; ObjectID = "rM7-jc-YVb"; */
+"rM7-jc-YVb.text" = "RippleAnimation";
+
+/* Class = "UILabel"; text = "Source code"; ObjectID = "zoS-ou-F1F"; */
+"zoS-ou-F1F.text" = "Source code";
