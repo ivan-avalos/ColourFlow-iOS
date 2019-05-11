@@ -15,9 +15,9 @@
 // along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
-    var touchCount = 0
     var count = 0
     var colors = [
         UIColor (hexString: "#f44336"),
@@ -67,21 +67,21 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            touchCount += 1
-            
             let location = touch.location(in: view)
-            let over = UIView ()
-            let width = 40.0
-            let height = 40.0
-            over.frame = CGRect(x: location.x - CGFloat(width / 2.0),
-                                y: location.y - CGFloat(height / 2.0),
-                                width: 40.0,
-                                height: 40.0)
-            view.addSubview(over)
-            var config = UIView.RippleConfiguration (color: getRandomColor())
-            config.scaleAnimateDuration = 1.4
-            over.rippleAnimate(with: config) {
-                over.removeFromSuperview()
+            let color = getRandomColor()
+            
+            let width: CGFloat = 40.0
+            let height: CGFloat = 40.0
+            let frame = CGRect(x: location.x - CGFloat(width / 2.0),
+                               y: location.y - CGFloat(height / 2.0),
+                               width: width,
+                               height: height)
+            var config = UIView.RippleConfiguration (frame: frame, color: color)
+            config.startRect = frame
+            config.boundSize = 20.0
+            config.fadeAnimateDuration = 0.0
+            view.rippleAnimate(with: config) {
+                self.view.backgroundColor = color
             }
         }
     }
