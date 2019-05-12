@@ -26,14 +26,24 @@ class AboutController: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath)
         if indexPath.section == 0 && indexPath.row == 1 {
             if let link = URL (string: "https://avalos.dulcedosystems.com") {
-                UIApplication.shared.open(link, options: [:]) { _ in
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(link, options: [:]) { _ in
+                        cell?.isSelected = false
+                    }
+                } else {
+                    UIApplication.shared.openURL(link)
                     cell?.isSelected = false
                 }
             }
         }
         if indexPath.section == 2 && indexPath.row == 1 {
             if let link = URL (string: "https://github.com/ivan-avalos/ColourFlow-iOS") {
-                UIApplication.shared.open(link, options: [:]) { _ in
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(link, options: [:]) { _ in
+                        cell?.isSelected = false
+                    }
+                } else {
+                    UIApplication.shared.openURL(link)
                     cell?.isSelected = false
                 }
             }
